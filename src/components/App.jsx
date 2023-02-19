@@ -19,7 +19,7 @@ function App() {
   const stateKeys = Object.keys(allValues)
 
   const handleIncrement = option => {
-    console.log(option);
+
     switch (option) {
       case 'good':
         setGood(prevState => prevState + 1);
@@ -45,7 +45,6 @@ function App() {
     }
     return total;
   };
-
 
   const countPositiveFeedbackPercentage = () => {
     const positiveFeedbackPercentage = (good * 100) / countTotalFeedback();
